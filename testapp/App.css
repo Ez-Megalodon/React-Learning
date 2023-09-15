@@ -1,0 +1,20 @@
+.App {
+    text-align: center;
+}
+
+.App-header {
+    background-color: #282c34;
+    padding: 1em;
+    color: white;
+}
+
+.App-body {
+    margin: 2em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    margin-left: 10px;
+}
