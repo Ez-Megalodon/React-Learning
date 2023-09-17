@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './App.css';
 
 function App() {
+
     const [tasks, setTasks] = useState([]);
     const [newTask, setNewTask] = useState("");
 
     const addTask = () => {
+
         if (newTask === "") return;
         setTasks([...tasks, newTask]);
         setNewTask("");
@@ -33,7 +35,8 @@ function App() {
                 <ul>
                     {tasks.map((task, index) => (
                         <li key={index}>
-                            {task} <button onClick={() => removeTask(index)}>Remove</button>
+                            {task}
+                            <button onClick={() => removeTask(index)}>Remove</button>
                         </li>
                     ))}
                 </ul>
